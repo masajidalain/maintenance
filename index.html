@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>منصة صيانة المساجد</title>
+  
+  <link rel="icon" type="image/png" href="">
+  
+  <link rel="apple-touch-icon" href="1111">
+
+  <style>
+    /* إزالة أي هوامش أو أشرطة تمرير مزدوجة من المتصفح */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #fcfbf9; /* لون خلفية المنصة */
+    }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxZsPlZd96pERAQ0a8GUYdB5vZyTwWqp2fC8se63qEWyFcoIqz024tuSABI6RQIt8si_w/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      // محاولة تشغيل وضع الشاشة الكاملة
+      const iframe = document.querySelector('iframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen().catch((err) => {
+          console.log('وضع ملء الشاشة يتطلب تفاعل المستخدم أولاً:', err.message);
+        });
+      }
+    };
+  </script>
+</body>
+</html>
